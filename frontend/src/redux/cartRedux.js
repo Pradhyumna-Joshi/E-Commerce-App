@@ -1,4 +1,4 @@
-import { ClassSharp } from "@material-ui/icons";
+import { ClassSharp } from "@mui/icons-material";
 import { createSlice } from "@reduxjs/toolkit";
 
 export const cartSlice = createSlice({

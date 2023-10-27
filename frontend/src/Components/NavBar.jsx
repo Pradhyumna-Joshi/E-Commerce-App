@@ -1,8 +1,8 @@
 import React from "react";
 import { FiSearch } from "react-icons/fi";
 import { AiOutlineShoppingCart } from "react-icons/ai";
-import { Badge } from "@material-ui/core";
-import { ShoppingCartOutlined } from "@material-ui/icons";
+import Badge from "@mui/material/Badge";
+import ShoppingCartOutlinedIcon from "@mui/icons-material/ShoppingCartOutlined";
 import { useSelector, useDispatch } from "react-redux";
 import { Link, Navigate, useNavigate } from "react-router-dom";
 import { reset } from "../redux/userRedux";
@@ -60,7 +60,7 @@ const NavBar = () => {
 
             <Link to={"/cart"}>
               <Badge badgeContent={quantity} color="primary">
-                <ShoppingCartOutlined color="action" />
+                <ShoppingCartOutlinedIcon color="action" />
               </Badge>
             </Link>
           </div>
