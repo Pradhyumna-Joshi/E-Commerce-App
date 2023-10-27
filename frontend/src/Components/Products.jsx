@@ -11,8 +11,8 @@ const Products = ({ cat, filters, sort }) => {
       try {
         const res = await axios.get(
           cat
-            ? `http://localhost:5000/api/products?category=${cat}`
-            : "http://localhost:5000/api/products"
+            ? `https://e-commerce-app-mocha-omega.vercel.app/api/products?category=${cat}`
+            : "https://e-commerce-app-mocha-omega.vercel.app/api/products"
         );
         setProducts(res.data);
       } catch (error) {}
