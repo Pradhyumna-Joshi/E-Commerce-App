@@ -34,7 +34,7 @@ const Cart = () => {
     const makeRequest = async () => {
       try {
         const res = await axios.post(
-          "http://localhost:5000/api/checkout/payment",
+          "https://e-commerce-app-mocha-omega.vercel.app/api/checkout/payment",
           {
             tokenId: stripeToken.id,
             amount: cart.total * 100,

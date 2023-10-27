@@ -30,7 +30,7 @@ const Product = () => {
     const getProduct = async () => {
       try {
         const res = await axios.get(
-          `http://localhost:5000/api/products/find/${id}`
+          `https://e-commerce-app-mocha-omega.vercel.app/api/products/find/${id}`
         );
         setProduct(res.data);
       } catch (error) {}
